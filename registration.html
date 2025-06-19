@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Parking Portal</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- Fonts and CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .register-page {
+      background: url('assets/bg.jpg') no-repeat center center/cover;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .register-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .input-group-text {
+      background-color: #f8f9fa;
+    }
+
+    .btn-primary {
+      background-color: #e8a92c;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ffae0c;
+    }
+
+    .text-muted {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="register-page">
+    <div class="register-card">
+      <h3 class="text-center mb-4">Create Account</h3>
+      <form action="#" method="POST">
+
+        <!-- Full Name -->
+        <div class="form-group mb-3">
+          <label for="name">Full Name</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user p-2"></i></span>
+            </div>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name" required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group mb-3">
+          <label for="email">Email address</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-envelope p-2"></i></span>
+            </div>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group mb-3">
+          <label for="password">Password</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock p-2"></i></span>
+            </div>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Create password" required>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group mb-4">
+          <label for="confirm_password">Confirm Password</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock p-2"></i></span>
+            </div>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100 mb-3">Register</button>
+
+        <!-- Login Link -->
+        <p class="text-center text-muted mb-0">Already have an account? <a href="login.php" class="text-primary">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
